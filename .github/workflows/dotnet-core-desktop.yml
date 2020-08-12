@@ -72,13 +72,9 @@ jobs:
 
     - name: Publish
       run: dotnet publish -c Release
-    
-    - name: Zip
-      shell: powershell
-      run: Compress-Archive .\bin\Release\netcoreapp3.1\ app.zip
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v2
       with:
         name: App Zip
-        path: app.zip
+        path: .\bin\Release\netcoreapp3.1\
