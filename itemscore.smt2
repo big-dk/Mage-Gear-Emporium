@@ -1,47 +1,9 @@
-﻿; test force bloodvine set ids
-; (assert (= (id slot-5) 19682))
-; (assert (= (id slot-7) 19683))
-; (assert (= (id slot-8) 19684))
-
-;; dont bv
-; (assert (not (= (id slot-5) 19682)))
-; (assert (not (= (id slot-8) 19684)))
-
-; no Garb of Royal Ascension
-; (assert (not (= (id slot-5) 21838)))
-
-; no pvp boots
-; (assert (not (= (id slot-8) 23291)))
-
-; test Not enigma robe
-; (assert (not (= (id slot-5) 21343)))
-; (assert (not (= (id slot-8) 21344)))
-
-; test Not robe of archmage
-; (assert (not (= (id slot-5) 14152)))
-
-;; no enigma robe
-;(assert (not (= (id slot-5) 21343)))
-; no robe of the archmage
-;(assert (not (= (id slot-5) 14152)))
-
-
-; no rank 14 weapons
-; (assert (not (= (id slot-13) 23451)))
-; (assert (not (= (id slot-13) 23466)))
-
 ; always use mqg
 (assert (= (id slot-12-2) 19339))
-
-;; don't use nelfs tear
-; (assert (not (= (id slot-12-1) 19379)))
-
-
 
 ;; can't use same ring or same trinket in two slots.
 (assert (not (= (id slot-11-1) (id slot-11-2))))
 (assert (not (= (id slot-12-1) (id slot-12-2))))
-
 
 (declare-const weaponhit Int)
 (assert (= weaponhit 
