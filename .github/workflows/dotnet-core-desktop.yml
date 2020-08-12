@@ -76,5 +76,5 @@ jobs:
     - name: Upload build artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: App Zip
-        path: .\bin\Release\netcoreapp3.1\publish\
+        name: MageGearEmporium
+        path: .\bin\Release\netcoreapp3.1\win-x86\publish\
